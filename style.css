@@ -25,6 +25,10 @@ body {
   z-index: 0;
 }
 
+.hero-image.mobile {
+  display: none;
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -92,10 +96,19 @@ body {
 
 /* MOBIEL */
 @media (max-width: 768px) {
+  .hero-image.desktop {
+    display: none;
+  }
+
+  .hero-image.mobile {
+    display: block;
+  }
+  
   .cta-button {
     padding: 16px 32px;
   }
 }
+
 
 
 
